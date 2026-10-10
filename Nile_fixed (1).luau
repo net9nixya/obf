@@ -5597,6 +5597,129 @@ local character = nil
 local flag7 = true
 local flag8 = false
 
+PSP:AddDropdown("Poses", {
+	Text = "Poses",
+	Values = { "HeadSit", "Penis", "Blowjob" },
+	Default = "HeadSit",
+	Multi = false,
+	Callback = function(arg)
+		str4 = arg
+
+		if str4 == "HeadSit" then
+			tbl6.HeadOffsetXSlider:SetValue(0)
+			tbl6.HeadOffsetYSlider:SetValue(1.5)
+			tbl6.HeadOffsetZSlider:SetValue(-0.2)
+			tbl6.TorsoOffsetXSlider:SetValue(0)
+			tbl6.TorsoOffsetYSlider:SetValue(2)
+			tbl6.TorsoOffsetZSlider:SetValue(0.75)
+			tbl6.LAOffsetXSlider:SetValue(-1)
+			tbl6.LAOffsetYSlider:SetValue(0.4)
+			tbl6.LAOffsetZSlider:SetValue(-0.75)
+			tbl6.RAOffsetXSlider:SetValue(1)
+			tbl6.RAOffsetYSlider:SetValue(0.3)
+			tbl6.RAOffsetZSlider:SetValue(-0.75)
+			tbl6.LLOffsetXSlider:SetValue(-0.8)
+			tbl6.LLOffsetYSlider:SetValue(-1.2)
+			tbl6.LLOffsetZSlider:SetValue(-0.8)
+			tbl6.RLOffsetXSlider:SetValue(1)
+			tbl6.RLOffsetYSlider:SetValue(-1.2)
+			tbl6.RLOffsetZSlider:SetValue(-0.85)
+			tbl6.HeadRotXSlider:SetValue(-17)
+			tbl6.HeadRotYSlider:SetValue(0)
+			tbl6.HeadRotZSlider:SetValue(0)
+			tbl6.TorsoRotXSlider:SetValue(0)
+			tbl6.TorsoRotYSlider:SetValue(0)
+			tbl6.TorsoRotZSlider:SetValue(0)
+			tbl6.LARotXSlider:SetValue(69)
+			tbl6.LARotYSlider:SetValue(-25)
+			tbl6.LARotZSlider:SetValue(34)
+			tbl6.RARotXSlider:SetValue(45)
+			tbl6.RARotYSlider:SetValue(46)
+			tbl6.RARotZSlider:SetValue(-23)
+			tbl6.LLRotXSlider:SetValue(-99)
+			tbl6.LLRotYSlider:SetValue(180)
+			tbl6.LLRotZSlider:SetValue(157)
+			tbl6.RLRotXSlider:SetValue(-99)
+			tbl6.RLRotYSlider:SetValue(-180)
+			tbl6.RLRotZSlider:SetValue(-153)
+		elseif str4 == "Penis" then
+			tbl6.TorsoOffsetXSlider:SetValue(0)
+			tbl6.TorsoOffsetYSlider:SetValue(-0.8)
+			tbl6.TorsoOffsetZSlider:SetValue(-6.5)
+			tbl6.TorsoRotXSlider:SetValue(-90)
+			tbl6.TorsoRotYSlider:SetValue(0)
+			tbl6.TorsoRotZSlider:SetValue(0)
+			tbl6.HeadOffsetXSlider:SetValue(0)
+			tbl6.HeadOffsetYSlider:SetValue(1.5)
+			tbl6.HeadOffsetZSlider:SetValue(0)
+			tbl6.HeadRotXSlider:SetValue(90)
+			tbl6.HeadRotYSlider:SetValue(0)
+			tbl6.HeadRotZSlider:SetValue(0)
+			tbl6.LAOffsetXSlider:SetValue(0)
+			tbl6.LAOffsetYSlider:SetValue(-2)
+			tbl6.LAOffsetZSlider:SetValue(0)
+			tbl6.RAOffsetXSlider:SetValue(0)
+			tbl6.RAOffsetYSlider:SetValue(-4)
+			tbl6.RAOffsetZSlider:SetValue(0)
+			tbl6.LLOffsetXSlider:SetValue(-1)
+			tbl6.LLOffsetYSlider:SetValue(-5.5)
+			tbl6.LLOffsetZSlider:SetValue(0)
+			tbl6.LLRotXSlider:SetValue(0)
+			tbl6.LLRotYSlider:SetValue(0)
+			tbl6.LLRotZSlider:SetValue(-90)
+			tbl6.RLOffsetXSlider:SetValue(1)
+			tbl6.RLOffsetYSlider:SetValue(-5.5)
+			tbl6.RLOffsetZSlider:SetValue(0)
+			tbl6.RLRotXSlider:SetValue(0)
+			tbl6.RLRotYSlider:SetValue(0)
+			tbl6.RLRotZSlider:SetValue(90)
+			tbl6.LARotXSlider:SetValue(0)
+			tbl6.LARotYSlider:SetValue(0)
+			tbl6.LARotZSlider:SetValue(0)
+			tbl6.RARotXSlider:SetValue(0)
+			tbl6.RARotYSlider:SetValue(0)
+			tbl6.RARotZSlider:SetValue(0)
+		elseif str4 == "Blowjob" then
+			tbl6.HeadRotXSlider:SetValue(-1)
+			tbl6.HeadRotYSlider:SetValue(0)
+			tbl6.HeadRotZSlider:SetValue(9)
+			tbl6.TorsoRotXSlider:SetValue(22)
+			tbl6.TorsoRotYSlider:SetValue(180)
+			tbl6.TorsoRotZSlider:SetValue(0)
+			tbl6.LARotXSlider:SetValue(137)
+			tbl6.LARotYSlider:SetValue(-21)
+			tbl6.LARotZSlider:SetValue(20)
+			tbl6.RARotXSlider:SetValue(137)
+			tbl6.RARotYSlider:SetValue(3)
+			tbl6.RARotZSlider:SetValue(-20)
+			tbl6.LLRotXSlider:SetValue(-72)
+			tbl6.LLRotYSlider:SetValue(17)
+			tbl6.LLRotZSlider:SetValue(-18)
+			tbl6.RLRotXSlider:SetValue(-69)
+			tbl6.RLRotYSlider:SetValue(-35)
+			tbl6.RLRotZSlider:SetValue(20)
+			tbl6.HeadOffsetXSlider:SetValue(0)
+			tbl6.HeadOffsetYSlider:SetValue(1.5)
+			tbl6.HeadOffsetZSlider:SetValue(0)
+			tbl6.TorsoOffsetXSlider:SetValue(0)
+			tbl6.TorsoOffsetYSlider:SetValue(-1.9)
+			tbl6.TorsoOffsetZSlider:SetValue(-2)
+			tbl6.LAOffsetXSlider:SetValue(-1.3)
+			tbl6.LAOffsetYSlider:SetValue(1.2)
+			tbl6.LAOffsetZSlider:SetValue(-0.5)
+			tbl6.RAOffsetXSlider:SetValue(1.3)
+			tbl6.RAOffsetYSlider:SetValue(1.1)
+			tbl6.RAOffsetZSlider:SetValue(-0.4)
+			tbl6.LLOffsetXSlider:SetValue(-0.8)
+			tbl6.LLOffsetYSlider:SetValue(-1.3)
+			tbl6.LLOffsetZSlider:SetValue(0.8)
+			tbl6.RLOffsetXSlider:SetValue(0.8)
+			tbl6.RLOffsetYSlider:SetValue(-1.2)
+			tbl6.RLOffsetZSlider:SetValue(0.8)
+		end
+	end,
+})
+
 PSP:AddCheckbox("CloneOption", {
 	Text = "Use Clone",
 	Default = false,
@@ -5882,6 +6005,65 @@ PSP:AddToggle("LoopPosePlayer", {
 	end,
 })
 
+PSS:AddDropdown("BodyPartsRedactor", {
+	Text = "Body Parts",
+	Values = { "Head", "Torso", "Left Arm", "Right Arm", "Left Leg", "Right Leg" },
+	Default = "Head",
+	Multi = false,
+	Callback = function(arg)
+		SelectedBodyPart = arg
+
+		for _, v27 in tbl6, nil, nil do
+			v27:SetVisible(false)
+		end
+
+		if SelectedBodyPart == "Head" then
+			tbl6.HeadRotXSlider:SetVisible(true)
+			tbl6.HeadRotYSlider:SetVisible(true)
+			tbl6.HeadRotZSlider:SetVisible(true)
+			tbl6.HeadOffsetXSlider:SetVisible(true)
+			tbl6.HeadOffsetYSlider:SetVisible(true)
+			tbl6.HeadOffsetZSlider:SetVisible(true)
+		elseif SelectedBodyPart == "Torso" then
+			tbl6.TorsoRotXSlider:SetVisible(true)
+			tbl6.TorsoRotYSlider:SetVisible(true)
+			tbl6.TorsoRotZSlider:SetVisible(true)
+			tbl6.TorsoOffsetXSlider:SetVisible(true)
+			tbl6.TorsoOffsetYSlider:SetVisible(true)
+			tbl6.TorsoOffsetZSlider:SetVisible(true)
+		elseif SelectedBodyPart == "Left Arm" then
+			tbl6.LARotXSlider:SetVisible(true)
+			tbl6.LARotYSlider:SetVisible(true)
+			tbl6.LARotZSlider:SetVisible(true)
+			tbl6.LAOffsetXSlider:SetVisible(true)
+			tbl6.LAOffsetYSlider:SetVisible(true)
+			tbl6.LAOffsetZSlider:SetVisible(true)
+		elseif SelectedBodyPart == "Right Arm" then
+			tbl6.RARotXSlider:SetVisible(true)
+			tbl6.RARotYSlider:SetVisible(true)
+			tbl6.RARotZSlider:SetVisible(true)
+			tbl6.RAOffsetXSlider:SetVisible(true)
+			tbl6.RAOffsetYSlider:SetVisible(true)
+			tbl6.RAOffsetZSlider:SetVisible(true)
+		elseif SelectedBodyPart == "Left Leg" then
+			tbl6.LLRotXSlider:SetVisible(true)
+			tbl6.LLRotYSlider:SetVisible(true)
+			tbl6.LLRotZSlider:SetVisible(true)
+			tbl6.LLOffsetXSlider:SetVisible(true)
+			tbl6.LLOffsetYSlider:SetVisible(true)
+			tbl6.LLOffsetZSlider:SetVisible(true)
+		elseif SelectedBodyPart == "Right Leg" then
+			tbl6.RLRotXSlider:SetVisible(true)
+			tbl6.RLRotYSlider:SetVisible(true)
+			tbl6.RLRotZSlider:SetVisible(true)
+			tbl6.RLOffsetXSlider:SetVisible(true)
+			tbl6.RLOffsetYSlider:SetVisible(true)
+			tbl6.RLOffsetZSlider:SetVisible(true)
+		end
+	end,
+})
+
+tbl6.HeadRotXSlider = PSS:AddSlider("SliderHeadRotX", {
 	Text = "Head Rot X",
 	Default = 0,
 	Min = -180,
@@ -6340,189 +6522,6 @@ tbl6.RLOffsetZSlider = PSS:AddSlider("SliderRLOffsetZ", {
 	Visible = false,
 	Callback = function(arg)
 		n30 = arg
-	end,
-})
-
-PSS:AddDropdown("BodyPartsRedactor", {
-	Text = "Body Parts",
-	Values = { "Head", "Torso", "Left Arm", "Right Arm", "Left Leg", "Right Leg" },
-	Default = "Head",
-	Multi = false,
-	Callback = function(arg)
-		SelectedBodyPart = arg
-
-		for _, v27 in tbl6, nil, nil do
-			v27:SetVisible(false)
-		end
-
-		if SelectedBodyPart == "Head" then
-			tbl6.HeadRotXSlider:SetVisible(true)
-			tbl6.HeadRotYSlider:SetVisible(true)
-			tbl6.HeadRotZSlider:SetVisible(true)
-			tbl6.HeadOffsetXSlider:SetVisible(true)
-			tbl6.HeadOffsetYSlider:SetVisible(true)
-			tbl6.HeadOffsetZSlider:SetVisible(true)
-		elseif SelectedBodyPart == "Torso" then
-			tbl6.TorsoRotXSlider:SetVisible(true)
-			tbl6.TorsoRotYSlider:SetVisible(true)
-			tbl6.TorsoRotZSlider:SetVisible(true)
-			tbl6.TorsoOffsetXSlider:SetVisible(true)
-			tbl6.TorsoOffsetYSlider:SetVisible(true)
-			tbl6.TorsoOffsetZSlider:SetVisible(true)
-		elseif SelectedBodyPart == "Left Arm" then
-			tbl6.LARotXSlider:SetVisible(true)
-			tbl6.LARotYSlider:SetVisible(true)
-			tbl6.LARotZSlider:SetVisible(true)
-			tbl6.LAOffsetXSlider:SetVisible(true)
-			tbl6.LAOffsetYSlider:SetVisible(true)
-			tbl6.LAOffsetZSlider:SetVisible(true)
-		elseif SelectedBodyPart == "Right Arm" then
-			tbl6.RARotXSlider:SetVisible(true)
-			tbl6.RARotYSlider:SetVisible(true)
-			tbl6.RARotZSlider:SetVisible(true)
-			tbl6.RAOffsetXSlider:SetVisible(true)
-			tbl6.RAOffsetYSlider:SetVisible(true)
-			tbl6.RAOffsetZSlider:SetVisible(true)
-		elseif SelectedBodyPart == "Left Leg" then
-			tbl6.LLRotXSlider:SetVisible(true)
-			tbl6.LLRotYSlider:SetVisible(true)
-			tbl6.LLRotZSlider:SetVisible(true)
-			tbl6.LLOffsetXSlider:SetVisible(true)
-			tbl6.LLOffsetYSlider:SetVisible(true)
-			tbl6.LLOffsetZSlider:SetVisible(true)
-		elseif SelectedBodyPart == "Right Leg" then
-			tbl6.RLRotXSlider:SetVisible(true)
-			tbl6.RLRotYSlider:SetVisible(true)
-			tbl6.RLRotZSlider:SetVisible(true)
-			tbl6.RLOffsetXSlider:SetVisible(true)
-			tbl6.RLOffsetYSlider:SetVisible(true)
-			tbl6.RLOffsetZSlider:SetVisible(true)
-		end
-	end,
-})
-
-
-
-PSP:AddDropdown("Poses", {
-	Text = "Poses",
-	Values = { "HeadSit", "Penis", "Blowjob" },
-	Default = "HeadSit",
-	Multi = false,
-	Callback = function(arg)
-		str4 = arg
-
-		if str4 == "HeadSit" then
-			tbl6.HeadOffsetXSlider:SetValue(0)
-			tbl6.HeadOffsetYSlider:SetValue(1.5)
-			tbl6.HeadOffsetZSlider:SetValue(-0.2)
-			tbl6.TorsoOffsetXSlider:SetValue(0)
-			tbl6.TorsoOffsetYSlider:SetValue(2)
-			tbl6.TorsoOffsetZSlider:SetValue(0.75)
-			tbl6.LAOffsetXSlider:SetValue(-1)
-			tbl6.LAOffsetYSlider:SetValue(0.4)
-			tbl6.LAOffsetZSlider:SetValue(-0.75)
-			tbl6.RAOffsetXSlider:SetValue(1)
-			tbl6.RAOffsetYSlider:SetValue(0.3)
-			tbl6.RAOffsetZSlider:SetValue(-0.75)
-			tbl6.LLOffsetXSlider:SetValue(-0.8)
-			tbl6.LLOffsetYSlider:SetValue(-1.2)
-			tbl6.LLOffsetZSlider:SetValue(-0.8)
-			tbl6.RLOffsetXSlider:SetValue(1)
-			tbl6.RLOffsetYSlider:SetValue(-1.2)
-			tbl6.RLOffsetZSlider:SetValue(-0.85)
-			tbl6.HeadRotXSlider:SetValue(-17)
-			tbl6.HeadRotYSlider:SetValue(0)
-			tbl6.HeadRotZSlider:SetValue(0)
-			tbl6.TorsoRotXSlider:SetValue(0)
-			tbl6.TorsoRotYSlider:SetValue(0)
-			tbl6.TorsoRotZSlider:SetValue(0)
-			tbl6.LARotXSlider:SetValue(69)
-			tbl6.LARotYSlider:SetValue(-25)
-			tbl6.LARotZSlider:SetValue(34)
-			tbl6.RARotXSlider:SetValue(45)
-			tbl6.RARotYSlider:SetValue(46)
-			tbl6.RARotZSlider:SetValue(-23)
-			tbl6.LLRotXSlider:SetValue(-99)
-			tbl6.LLRotYSlider:SetValue(180)
-			tbl6.LLRotZSlider:SetValue(157)
-			tbl6.RLRotXSlider:SetValue(-99)
-			tbl6.RLRotYSlider:SetValue(-180)
-			tbl6.RLRotZSlider:SetValue(-153)
-		elseif str4 == "Penis" then
-			tbl6.TorsoOffsetXSlider:SetValue(0)
-			tbl6.TorsoOffsetYSlider:SetValue(-0.8)
-			tbl6.TorsoOffsetZSlider:SetValue(-6.5)
-			tbl6.TorsoRotXSlider:SetValue(-90)
-			tbl6.TorsoRotYSlider:SetValue(0)
-			tbl6.TorsoRotZSlider:SetValue(0)
-			tbl6.HeadOffsetXSlider:SetValue(0)
-			tbl6.HeadOffsetYSlider:SetValue(1.5)
-			tbl6.HeadOffsetZSlider:SetValue(0)
-			tbl6.HeadRotXSlider:SetValue(90)
-			tbl6.HeadRotYSlider:SetValue(0)
-			tbl6.HeadRotZSlider:SetValue(0)
-			tbl6.LAOffsetXSlider:SetValue(0)
-			tbl6.LAOffsetYSlider:SetValue(-2)
-			tbl6.LAOffsetZSlider:SetValue(0)
-			tbl6.RAOffsetXSlider:SetValue(0)
-			tbl6.RAOffsetYSlider:SetValue(-4)
-			tbl6.RAOffsetZSlider:SetValue(0)
-			tbl6.LLOffsetXSlider:SetValue(-1)
-			tbl6.LLOffsetYSlider:SetValue(-5.5)
-			tbl6.LLOffsetZSlider:SetValue(0)
-			tbl6.LLRotXSlider:SetValue(0)
-			tbl6.LLRotYSlider:SetValue(0)
-			tbl6.LLRotZSlider:SetValue(-90)
-			tbl6.RLOffsetXSlider:SetValue(1)
-			tbl6.RLOffsetYSlider:SetValue(-5.5)
-			tbl6.RLOffsetZSlider:SetValue(0)
-			tbl6.RLRotXSlider:SetValue(0)
-			tbl6.RLRotYSlider:SetValue(0)
-			tbl6.RLRotZSlider:SetValue(90)
-			tbl6.LARotXSlider:SetValue(0)
-			tbl6.LARotYSlider:SetValue(0)
-			tbl6.LARotZSlider:SetValue(0)
-			tbl6.RARotXSlider:SetValue(0)
-			tbl6.RARotYSlider:SetValue(0)
-			tbl6.RARotZSlider:SetValue(0)
-		elseif str4 == "Blowjob" then
-			tbl6.HeadRotXSlider:SetValue(-1)
-			tbl6.HeadRotYSlider:SetValue(0)
-			tbl6.HeadRotZSlider:SetValue(9)
-			tbl6.TorsoRotXSlider:SetValue(22)
-			tbl6.TorsoRotYSlider:SetValue(180)
-			tbl6.TorsoRotZSlider:SetValue(0)
-			tbl6.LARotXSlider:SetValue(137)
-			tbl6.LARotYSlider:SetValue(-21)
-			tbl6.LARotZSlider:SetValue(20)
-			tbl6.RARotXSlider:SetValue(137)
-			tbl6.RARotYSlider:SetValue(3)
-			tbl6.RARotZSlider:SetValue(-20)
-			tbl6.LLRotXSlider:SetValue(-72)
-			tbl6.LLRotYSlider:SetValue(17)
-			tbl6.LLRotZSlider:SetValue(-18)
-			tbl6.RLRotXSlider:SetValue(-69)
-			tbl6.RLRotYSlider:SetValue(-35)
-			tbl6.RLRotZSlider:SetValue(20)
-			tbl6.HeadOffsetXSlider:SetValue(0)
-			tbl6.HeadOffsetYSlider:SetValue(1.5)
-			tbl6.HeadOffsetZSlider:SetValue(0)
-			tbl6.TorsoOffsetXSlider:SetValue(0)
-			tbl6.TorsoOffsetYSlider:SetValue(-1.9)
-			tbl6.TorsoOffsetZSlider:SetValue(-2)
-			tbl6.LAOffsetXSlider:SetValue(-1.3)
-			tbl6.LAOffsetYSlider:SetValue(1.2)
-			tbl6.LAOffsetZSlider:SetValue(-0.5)
-			tbl6.RAOffsetXSlider:SetValue(1.3)
-			tbl6.RAOffsetYSlider:SetValue(1.1)
-			tbl6.RAOffsetZSlider:SetValue(-0.4)
-			tbl6.LLOffsetXSlider:SetValue(-0.8)
-			tbl6.LLOffsetYSlider:SetValue(-1.3)
-			tbl6.LLOffsetZSlider:SetValue(0.8)
-			tbl6.RLOffsetXSlider:SetValue(0.8)
-			tbl6.RLOffsetYSlider:SetValue(-1.2)
-			tbl6.RLOffsetZSlider:SetValue(0.8)
-		end
 	end,
 })
 
